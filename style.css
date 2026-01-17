@@ -1,0 +1,36 @@
+body { 
+    font-family: 'Inter', sans-serif; 
+}
+.iconify { 
+    stroke-width: 1.5px; 
+}
+
+/* Subtle Grid Background */
+.bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+    mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+}
+
+/* Scroll Animation Utilities */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Text Reveal Styles */
+.reveal-word {
+    opacity: 0.2;
+    transition: opacity 0.8s ease;
+}
+.reveal-word.active {
+    opacity: 1;
+}

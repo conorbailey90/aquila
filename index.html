@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aquila Optometrist | Billericay</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Abhaya+Libre:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-slate-600 antialiased selection:bg-blue-100 selection:text-blue-900 relative">
+
+  <div class="fixed inset-0 z-[-1] bg-grid-pattern pointer-events-none h-screen w-full"></div>
+
+  <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100/80">
+    <div class="max-w-7xl mx-auto px-6 h-20 grid grid-cols-12 items-center">
+      <div class="col-span-6 md:col-span-3">
+        <a href="#top" class="text-xl font-semibold tracking-tight text-slate-900 z-50 uppercase" style="font-family: 'Abhaya Libre', serif;">
+          A<span class="text-blue-600">Q</span>UILA
+        </a>
+      </div>
+
+      <div class="hidden md:flex col-span-6 justify-center gap-8">
+        <a href="#home" class="text-sm font-normal text-slate-500 hover:text-blue-600 transition-colors">Home</a>
+        <a href="#about" class="text-sm font-normal text-slate-500 hover:text-blue-600 transition-colors">About</a>
+        <a href="#services" class="text-sm font-normal text-slate-500 hover:text-blue-600 transition-colors">Services</a>
+        <a href="#frames" class="text-sm font-normal text-slate-500 hover:text-blue-600 transition-colors">Eyewear</a>
+        <a href="#map" class="text-sm font-normal text-slate-500 hover:text-blue-600 transition-colors">Location</a>
+      </div>
+
+      <div class="hidden md:flex col-span-3 justify-end gap-4">
+        <a href="#contact" class="text-sm font-medium text-white bg-slate-900 hover:bg-blue-600 px-5 py-2.5 rounded-full transition-all duration-300">
+          Book Appointment
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="md:hidden fixed top-1/2 right-4 z-50 flex justify-end -translate-y-1/2" style="top: 40px;">
+    <button id="mobile-menu-btn" class="text-slate-900">
+      <span class="iconify" data-icon="lucide:menu" data-width="24"></span>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="md:hidden pt-2 fixed inset-0 bg-white z-50 translate-x-full transition-transform duration-300">
+    <div class="px-6 py-2 flex items-center justify-between border-b border-slate-100">
+      <a href="#top" class="text-xl font-medium tracking-tighter text-slate-900 uppercase" style="font-family: 'Abhaya Libre', serif;">
+        A<span class="text-blue-600">Q</span>UILA
+      </a>
+      <button id="mobile-menu-close" class="text-slate-900">
+        <span class="iconify" data-icon="lucide:x" data-width="24"></span>
+      </button>
+    </div>
+    <nav class="px-6 py-8 space-y-6">
+      <a href="#home" class="block text-lg font-medium text-slate-900 hover:text-blue-600 transition-colors mobile-link">Home</a>
+      <a href="#about" class="block text-lg font-medium text-slate-900 hover:text-blue-600 transition-colors mobile-link">About</a>
+      <a href="#services" class="block text-lg font-medium text-slate-900 hover:text-blue-600 transition-colors mobile-link">Services</a>
+      <a href="#frames" class="block text-lg font-medium text-slate-900 hover:text-blue-600 transition-colors mobile-link">Eyewear</a>
+      <a href="#map" class="block text-lg font-medium text-slate-900 hover:text-blue-600 transition-colors mobile-link">Location</a>
+      <a href="#contact" class="block text-center text-sm font-medium text-white bg-slate-900 hover:bg-blue-600 px-5 py-2.5 rounded-full transition-all duration-300 mobile-link mt-4">
+        Book Appointment
+      </a>
+    </nav>
+  </div>
+
+  <section id="home" class="relative pt-24 pb-20 md:pt-36 md:pb-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-12 gap-y-12 md:gap-x-12 items-center">
+      <div class="col-span-12 md:col-span-6 space-y-8 fade-up order-1">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 border border-blue-100/50">
+          <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+          <span class="text-xs font-medium tracking-wide uppercase">Accepting New Patients</span>
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-medium tracking-tight text-slate-900 leading-[1.1]">
+          Clarity Through <br/>
+          <span class="font-semibold bg-gradient-to-r from-blue-900 via-blue-500 to-blue-900 bg-clip-text text-transparent">
+            Precision
+          </span>
+        </h1>
+
+        <p class="text-lg text-slate-500 font-light max-w-md leading-relaxed">
+          Independent optometry on Billericay High Street. We fuse state-of-the-art eye care with a refined array of premium frames—delivering vision that's as sharp as it is effortless.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+          <a href="#contact" class="inline-flex text-center items-center justify-center h-12 p-8 rounded-[10px] bg-slate-900 text-white font-medium text-sm hover:bg-blue-600 transition-all duration-300 group shadow-lg shadow-blue-900/10">
+            Book Consultation
+            <span class="iconify ml-2 group-hover:translate-x-1 transition-transform" data-icon="lucide:arrow-right" data-width="16"></span>
+          </a>
+          <a href="#services" class="inline-flex items-center text-center justify-center h-12 p-8 rounded-[10px] bg-white border border-slate-200 text-slate-900 font-medium text-sm hover:border-blue-200 hover:bg-blue-50 transition-all duration-300">
+            Our Services
+          </a>
+        </div>
+
+        <div class="pt-8 flex items-center gap-6 text-slate-400">
+          <div class="flex -space-x-2">
+            <div class="w-8 h-8 rounded-full bg-slate-100 border border-white flex items-center justify-center overflow-hidden">
+              <span class="iconify text-slate-300" data-icon="lucide:user" data-width="14"></span>
+            </div>
+            <div class="w-8 h-8 rounded-full bg-slate-100 border border-white flex items-center justify-center overflow-hidden">
+              <span class="iconify text-slate-300" data-icon="lucide:user" data-width="14"></span>
+            </div>
+            <div class="w-8 h-8 rounded-full bg-slate-100 border border-white flex items-center justify-center overflow-hidden">
+              <span class="iconify text-slate-300" data-icon="lucide:user" data-width="14"></span>
+            </div>
+          </div>
+          <span class="text-xs font-medium tracking-wide">Trusted by 2,000+ Billericay locals</span>
+        </div>
+      </div>
+
+      <div class="col-span-12 md:col-span-6 relative fade-up order-1 md:order-2" style="transition-delay: 100ms;">
+        <div class="aspect-[4/5] md:aspect-square bg-slate-50 rounded-2xl overflow-hidden relative group border border-slate-100 shadow-xl shadow-slate-200/50">
+          <div class="absolute inset-0 bg-gradient-to-tr from-blue-50 to-white opacity-80"></div>
+          <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" alt="Optician examining eye" class="w-full h-full object-cover opacity-90 transition-all duration-700">
+          <div class="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur p-6 rounded-xl border border-white/50 shadow-sm">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-xs font-medium text-blue-600 mb-1">Independent Practice</p>
+                <p class="text-sm text-slate-900 font-medium">Expert Eye Care in Billericay</p>
+              </div>
+              <span class="iconify text-slate-900" data-icon="lucide:eye" data-width="20"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-32 bg-white relative">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-12">
+      <div class="col-span-12 md:col-span-8 md:col-start-3 text-center">
+        <p class="text-sm font-medium text-blue-600 mb-8 uppercase tracking-widest fade-up">Our Vision</p>
+        <h2 id="text-reveal-target" class="text-3xl md:text-5xl font-medium leading-[1.4] tracking-tight text-[#1c2e59]">
+          Vision isn't just about sharp sight—it's about seeing the world in its full, vivid detail. At our independent practice on Billericay High Street, we connect precise eye care with thoughtfully selected eyewear.
+          Our experienced optometrists begin with your needs, using advanced retinal imaging to have a complete picture. From there, we guide you through our range of premium frames, finding the perfect match for your look and lifestyle.
+          We skip the fads for what lasts. Ready to see better? Your eyes, our focus.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-slate-50/50 border-y border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-12 gap-y-12 md:gap-x-16">
+      <div class="col-span-12 md:col-span-4 fade-up">
+        <h2 class="text-3xl font-medium tracking-tight text-slate-900 mb-6">Our Philosophy</h2>
+        <div class="h-0.5 w-12 bg-blue-600"></div>
+      </div>
+
+      <div class="col-span-12 md:col-span-8 grid grid-cols-12 gap-x-8 gap-y-12">
+        <div class="col-span-12 sm:col-span-6 space-y-4 fade-up" style="transition-delay: 100ms;">
+          <div class="w-10 h-10 rounded-lg bg-white border border-slate-100 flex items-center justify-center shadow-sm text-blue-600">
+            <span class="iconify" data-icon="lucide:microscope" data-width="20"></span>
+          </div>
+          <h3 class="text-lg font-medium text-slate-900">Clinical Excellence</h3>
+          <p class="text-sm leading-relaxed text-slate-500">
+            We utilize hospital-grade OCT scanning technology to detect eye conditions years before they become visible.
+          </p>
+        </div>
+
+        <div class="col-span-12 sm:col-span-6 space-y-4 fade-up" style="transition-delay: 200ms;">
+          <div class="w-10 h-10 rounded-lg bg-white border border-slate-100 flex items-center justify-center shadow-sm text-blue-600">
+            <span class="iconify" data-icon="lucide:glasses" data-width="20"></span>
+          </div>
+          <h3 class="text-lg font-medium text-slate-900">Bespoke Styling</h3>
+          <p class="text-sm leading-relaxed text-slate-500">
+            Eyewear is an extension of your personality. Our styling experts help you find frames that balance comfort and aesthetics.
+          </p>
+        </div>
+
+        <div class="col-span-12 sm:col-span-6 space-y-4 fade-up" style="transition-delay: 100ms;">
+          <div class="w-10 h-10 rounded-lg bg-white border border-slate-100 flex items-center justify-center shadow-sm text-blue-600">
+            <span class="iconify" data-icon="lucide:clock" data-width="20"></span>
+          </div>
+          <h3 class="text-lg font-medium text-slate-900">Dedicated Care</h3>
+          <p class="text-sm leading-relaxed text-slate-500">
+            We allocate extended appointment times for every patient. No rushing, just thorough care.
+          </p>
+        </div>
+
+        <div class="col-span-12 sm:col-span-6 space-y-4 fade-up" style="transition-delay: 200ms;">
+          <div class="w-10 h-10 rounded-lg bg-white border border-slate-100 flex items-center justify-center shadow-sm text-blue-600">
+            <span class="iconify" data-icon="lucide:heart-handshake" data-width="20"></span>
+          </div>
+          <h3 class="text-lg font-medium text-slate-900">Local & Independent</h3>
+          <p class="text-sm leading-relaxed text-slate-500">
+            Proudly serving the Billericay community. Our only priority is the health of your eyes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16 fade-up">
+        <h2 class="text-3xl font-medium tracking-tight text-slate-900 mb-4">Comprehensive Eye Care Services</h2>
+        <p class="text-slate-600">From routine eye examinations to specialized diagnostics, we provide complete optometric care under one roof.</p>
+      </div>
+
+      <div class="grid grid-cols-12 gap-2">
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 fade-up" style="transition-delay: 100ms;">
+          <div class="h-full p-8 rounded-2xl bg-slate-50/50 border border-slate-100 hover:border-blue-200 transition-colors">
+            <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 mb-6">
+              <span class="iconify" data-icon="lucide:scan-eye" data-width="24"></span>
+            </div>
+            <h3 class="text-xl font-medium text-slate-900 mb-3">Complete Eye Examinations</h3>
+            <p class="text-sm text-slate-600 mb-4">A comprehensive check of your vision and overall eye health, covering everything from sharpness and prescription accuracy to how your eyes work together and stay healthy inside and out.</p>
+            <ul class="space-y-2 text-sm text-slate-500">
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-0.5">•</span>
+                <span>Visual acuity and refractive error assessment</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-0.5">•</span>
+                <span>Binocular vision and eye coordination tests</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-0.5">•</span>
+                <span>Internal and external eye health evaluation</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 fade-up" style="transition-delay: 200ms;">
+          <div class="h-full p-8 rounded-2xl bg-slate-50/50 border border-slate-100 hover:border-blue-200 transition-colors">
+            <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 mb-6">
+              <span class="iconify" data-icon="lucide:activity" data-width="24"></span>
+            </div>
+            <h3 class="text-xl font-medium text-slate-900 mb-3">Advanced Diagnostic Imaging</h3>
+            <p class="text-sm text-slate-600 mb-4">State-of-the-art technology for early detection and monitoring of eye conditions, including OCT scans, retinal photography, and visual field testing.</p>
+            <ul class="space-y-2 text-sm text-slate-500">
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-0.5">•</span>
+                <span>OCT scanning for macular and glaucoma assessment</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-0.5">•</span>
+                <span>Digital retinal photography and imaging</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-0.5">•</span>
+                <span>Visual field perimetry testing</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 fade-up" style="transition-delay: 300ms;">
+          <div class="h-full p-8 rounded-2xl bg-slate-50/50 border border-slate-100 hover:border-blue-200 transition-colors">
+            <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 mb-6">
+              <span class="iconify" data-icon="lucide:circle-dot" data-width="24"></span>
+            </div>
+            <h3 class="text-xl font-medium text-slate-900 mb-3">Contact Lens Services</h3>
+            <p class="text-sm text-slate-600 mb-4">Expert fitting and aftercare for all types of contact lenses, from daily disposables to specialist lenses for astigmatism and presbyopia.</p>
+            <ul class="space-y-2 text-sm text-slate-500">
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-0.5">•</span>
+                <span>Comprehensive contact lens fittings and trials</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-0.5">•</span>
+                <span>Toric lenses for astigmatism correction</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-0.5">•</span>
+                <span>Multifocal and specialist lens options</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 fade-up" style="transition-delay: 100ms;">
+          <div class="h-full p-8 rounded-2xl bg-slate-50/50 border border-slate-100 hover:border-blue-200 transition-colors">
+            <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 mb-6">
+              <span class="iconify" data-icon="lucide:shield-check" data-width="24"></span>
+            </div>
+            <h3 class="text-xl font-medium text-slate-900 mb-3">Eye Condition Management</h3>
+            <p class="text-sm text-slate-600 mb-4">Diagnosis, monitoring, and management of common eye conditions including glaucoma, cataracts, macular degeneration, and diabetic eye disease.</p>
+            <ul class="space-y-2 text-sm text-slate-500">
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-0.5">•</span>
+                <span>Glaucoma screening and monitoring</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-0.5">•</span>
+                <span>Diabetic retinopathy assessment</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-0.5">•</span>
+                <span>Age-related macular degeneration monitoring</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 fade-up" style="transition-delay: 200ms;">
+          <div class="h-full p-8 rounded-2xl bg-slate-50/50 border border-slate-100 hover:border-blue-200 transition-colors">
+            <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 mb-6">
+              <span class="iconify" data-icon="lucide:droplet" data-width="24"></span>
+            </div>
+            <h3 class="text-xl font-medium text-slate-900 mb-3">Dry Eye Assessment & Treatment</h3>
+            <p class="text-sm text-slate-600 mb-4">Specialized evaluation and treatment options for dry eye syndrome, including meibomian gland assessment and personalized treatment plans.</p>
+            <ul class="space-y-2 text-sm text-slate-500">
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-0.5">•</span>
+                <span>Comprehensive dry eye evaluation</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-0.5">•</span>
+                <span>Meibomian gland dysfunction assessment</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-0.5">•</span>
+                <span>Customized treatment and management plans</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 fade-up" style="transition-delay: 300ms;">
+          <div class="h-full p-8 rounded-2xl bg-slate-50/50 border border-slate-100 hover:border-blue-200 transition-colors">
+            <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 mb-6">
+              <span class="iconify" data-icon="lucide:glasses" data-width="24"></span>
+            </div>
+            <h3 class="text-xl font-medium text-slate-900 mb-3">Expert Eyewear Dispensing</h3>
+            <p class="text-sm text-slate-600 mb-4">Professional guidance in selecting frames and lenses that suit your prescription, lifestyle, and aesthetic preferences, with precision fitting and adjustment services.</p>
+            <ul class="space-y-2 text-sm text-slate-500">
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-0.5">•</span>
+                <span>Personalized frame selection and styling advice</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-0.5">•</span>
+                <span>Advanced lens options including varifocals and coatings</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-0.5">•</span>
+                <span>Professional frame adjustments and repairs</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center fade-up" style="transition-delay: 400ms;">
+        <p class="text-slate-600 mb-6">We also provide children's eye examinations, sports vision assessments, and urgent eye care for sudden vision changes or eye injuries.</p>
+        <a href="#contact" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors">
+          <span>Book your comprehensive eye examination</span>
+          <span class="iconify" data-icon="lucide:arrow-right" data-width="18"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="frames" class="py-24 bg-slate-900 text-white overflow-hidden relative">
+    <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-12 gap-y-12 md:gap-x-12 items-center">
+      <div class="col-span-12 md:col-span-5 fade-up">
+        <p class="text-blue-400 font-medium text-sm mb-4 tracking-wide uppercase">The Collection</p>
+        <h2 class="text-3xl md:text-4xl font-medium tracking-tight mb-6">Curated eyewear for the individual.</h2>
+        <p class="text-slate-400 font-light mb-8 leading-relaxed">
+          We travel to international optical fairs to bring the finest independent eyewear to Billericay. Discover frames you won't find on every high street.
+        </p>
+      </div>
+
+      <div class="col-span-12 md:col-span-6 md:col-start-7 fade-up" style="transition-delay: 200ms;">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="aspect-square rounded-xl overflow-hidden border border-slate-700 hover:border-blue-500/30 transition-all hover:scale-105 duration-300">
+            <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&h=600&fit=crop" alt="Person wearing stylish eyeglasses" class="w-full h-full object-cover">
+          </div>
+          <div class="aspect-square rounded-xl overflow-hidden border border-slate-700 hover:border-blue-500/30 transition-all hover:scale-105 duration-300">
+            <img src="https://images.unsplash.com/photo-1508296695146-257a814070b4?w=600&h=600&fit=crop" alt="Person wearing designer frames" class="w-full h-full object-cover">
+          </div>
+          <div class="aspect-square rounded-xl overflow-hidden border border-slate-700 hover:border-blue-500/30 transition-all hover:scale-105 duration-300">
+            <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?w=600&h=600&fit=crop" alt="Person wearing modern glasses" class="w-full h-full object-cover">
+          </div>
+          <div class="aspect-square rounded-xl overflow-hidden border border-slate-700 hover:border-blue-500/30 transition-all hover:scale-105 duration-300">
+            <img src="https://images.unsplash.com/photo-1509695507497-903c140c43b0?w=600&h=600&fit=crop" alt="Person wearing elegant eyewear" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-24">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-12 gap-y-16 lg:gap-x-16">
+      <div class="col-span-12 lg:col-span-5 space-y-8 fade-up">
+        <div>
+          <h2 class="text-3xl font-medium tracking-tight text-slate-900 mb-4">Visit Aquila.</h2>
+          <p class="text-slate-500">We are conveniently located on the High Street. Book your appointment today.</p>
+        </div>
+
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="mt-1 w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0 border border-blue-100">
+              <span class="iconify" data-icon="lucide:map-pin" data-width="16"></span>
+            </div>
+            <div>
+              <h4 class="text-sm font-medium text-slate-900">Address</h4>
+              <p class="text-sm text-slate-500 mt-1">72 High Street<br>Billericay, Essex<br>CM12 9BS</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="mt-1 w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0 border border-blue-100">
+              <span class="iconify" data-icon="lucide:phone" data-width="16"></span>
+            </div>
+            <div>
+              <h4 class="text-sm font-medium text-slate-900">Phone</h4>
+              <p class="text-sm text-slate-500 mt-1">01277 624916</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="mt-1 w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0 border border-blue-100">
+              <span class="iconify" data-icon="lucide:clock" data-width="16"></span>
+            </div>
+            <div>
+              <h4 class="text-sm font-medium text-slate-900">Hours</h4>
+              <ul class="text-sm text-slate-500 mt-1 space-y-1">
+                <li class="flex justify-between w-48"><span>Mon - Fri</span> <span>09:00 - 17:30</span></li>
+                <li class="flex justify-between w-48"><span>Saturday</span> <span>09:00 - 16:00</span></li>
+                <li class="flex justify-between w-48"><span>Sunday</span> <span>Closed</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-span-12 lg:col-span-6 lg:col-start-7 bg-white p-8 rounded-2xl border border-slate-100 shadow-sm fade-up" style="transition-delay: 200ms;">
+        <form class="space-y-5">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-1">
+              <label class="text-xs font-medium text-slate-700 ml-1">First Name</label>
+              <input type="text" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-100 focus:border-blue-400 transition-all focus:bg-white" placeholder="Jane">
+            </div>
+            <div class="space-y-1">
+              <label class="text-xs font-medium text-slate-700 ml-1">Last Name</label>
+              <input type="text" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-100 focus:border-blue-400 transition-all focus:bg-white" placeholder="Doe">
+            </div>
+          </div>
+          <div class="space-y-1">
+            <label class="text-xs font-medium text-slate-700 ml-1">Email Address</label>
+            <input type="email" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-100 focus:border-blue-400 transition-all focus:bg-white" placeholder="jane@example.com">
+          </div>
+          <div class="space-y-1">
+            <label class="text-xs font-medium text-slate-700 ml-1">Interest</label>
+            <div class="relative">
+              <select class="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-100 focus:border-blue-400 transition-all appearance-none text-slate-600 focus:bg-white">
+                <option>Eye Examination</option>
+                <option>Contact Lens Fitting</option>
+                <option>Frame Styling</option>
+                <option>Other Enquiry</option>
+              </select>
+              <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
+                <span class="iconify" data-icon="lucide:chevron-down" data-width="16"></span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-1">
+            <label class="text-xs font-medium text-slate-700 ml-1">Message</label>
+            <textarea rows="4" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-100 focus:border-blue-400 transition-all resize-none focus:bg-white" placeholder="How can we help?"></textarea>
+          </div>
+          <button type="button" class="w-full bg-slate-900 text-white font-medium text-sm py-3.5 rounded-lg hover:bg-blue-600 transition-colors shadow-lg shadow-slate-900/10">
+            Send Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="map" class="py-12 md:py-24 bg-slate-50 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-12">
+      <div class="col-span-12 mb-12 fade-up">
+        <h2 class="text-2xl md:text-3xl font-medium tracking-tight text-slate-900">Find us on High Street.</h2>
+      </div>
+
+      <div class="col-span-12 h-96 md:h-[500px] bg-slate-200 rounded-2xl overflow-hidden border border-slate-200 shadow-sm relative z-0 fade-up" style="transition-delay: 100ms;">
+        <iframe
+          width="100%"
+          height="100%"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=Aquila+Optometrist,+72+High+St,+Billericay+CM12+9BS&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          class="absolute inset-0 w-full h-full grayscale-[20%] hover:grayscale-0 transition-all duration-700"
+          title="Aquila Optometrist Location"
+        ></iframe>
+        <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-6 py-4 rounded-xl border border-white/50 shadow-sm hidden md:block">
+          <p class="text-xs font-medium text-blue-600 mb-1">Located at</p>
+          <p class="text-sm text-slate-900 font-medium">72 High St, Billericay</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="py-24 bg-slate-50 border-y border-slate-100 relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-40">
+      <div class="absolute -top-[20%] -right-[10%] w-[500px] h-[500px] rounded-full bg-blue-100/50 blur-3xl"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="grid grid-cols-12 gap-y-8 md:gap-x-12 mb-16 items-end">
+        <div class="col-span-12 md:col-span-7 fade-up">
+          <p class="text-blue-600 font-medium text-sm mb-4 tracking-wide uppercase">Patient Stories</p>
+          <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-slate-900">
+            Trusted by the Billericay community.
+          </h2>
+        </div>
+        <div class="col-span-12 md:col-span-5 md:text-right fade-up" style="transition-delay: 100ms;">
+          <div class="inline-flex items-center gap-2 text-slate-500 text-sm font-medium">
+            <span class="flex text-yellow-400">
+              <span class="iconify" data-icon="lucide:star" data-width="16" data-height="16" style="fill: currentColor;"></span>
+              <span class="iconify" data-icon="lucide:star" data-width="16" data-height="16" style="fill: currentColor;"></span>
+              <span class="iconify" data-icon="lucide:star" data-width="16" data-height="16" style="fill: currentColor;"></span>
+              <span class="iconify" data-icon="lucide:star" data-width="16" data-height="16" style="fill: currentColor;"></span>
+              <span class="iconify" data-icon="lucide:star" data-width="16" data-height="16" style="fill: currentColor;"></span>
+            </span>
+            <span>4.9/5 Average Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-blue-200 transition-all duration-300 flex flex-col fade-up" style="transition-delay: 100ms;">
+          <div class="mb-6 text-blue-600/20">
+            <span class="iconify" data-icon="lucide:quote" data-width="40"></span>
+          </div>
+          <p class="text-slate-600 leading-relaxed mb-6 flex-grow">
+            "The most thorough eye exam I've ever had. The team took the time to explain the OCT scan results in plain English, which gave me such peace of mind. I didn't feel rushed for a second."
+          </p>
+          <div class="flex items-center gap-4 mt-auto pt-6 border-t border-slate-50">
+            <div class="w-10 h-10 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-medium text-sm">
+              JD
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold text-slate-900">James D.</h4>
+              <p class="text-xs text-slate-400">Patient since 2019</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-blue-200 transition-all duration-300 flex flex-col fade-up" style="transition-delay: 200ms;">
+          <div class="mb-6 text-blue-600/20">
+            <span class="iconify" data-icon="lucide:quote" data-width="40"></span>
+          </div>
+          <p class="text-slate-600 leading-relaxed mb-6 flex-grow">
+            "I used to dread picking glasses because nothing seemed to fit my face. The styling consultation here was a game changer. I actually look forward to wearing my new frames now."
+          </p>
+          <div class="flex items-center gap-4 mt-auto pt-6 border-t border-slate-50">
+            <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-medium text-sm">
+              SL
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold text-slate-900">Sarah L.</h4>
+              <p class="text-xs text-slate-400">Styling Consultation</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-blue-200 transition-all duration-300 flex flex-col fade-up" style="transition-delay: 300ms;">
+          <div class="mb-6 text-blue-600/20">
+            <span class="iconify" data-icon="lucide:quote" data-width="40"></span>
+          </div>
+          <p class="text-slate-600 leading-relaxed mb-6 flex-grow">
+            "Fantastic with children. My daughter was nervous about her first test, but the optometrist made it fun and engaging. A true independent gem on the High Street."
+          </p>
+          <div class="flex items-center gap-4 mt-auto pt-6 border-t border-slate-50">
+            <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-medium text-sm">
+              MW
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold text-slate-900">Michael W.</h4>
+              <p class="text-xs text-slate-400">Family Appointment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center fade-up" style="transition-delay: 400ms;">
+        <a href="#" class="inline-flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-blue-600 transition-colors group">
+          <span>Read all 150+ reviews on Google</span>
+          <span class="iconify group-hover:translate-x-1 transition-transform" data-icon="lucide:external-link" data-width="14"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-12">
+      <div class="col-span-12 relative rounded-3xl overflow-hidden bg-gradient-to-br from-slate-900 to-slate-700 px-6 py-16 md:py-24 text-center shadow-2xl shadow-blue-900/20 fade-up">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+          <div class="absolute -top-24 -right-24 w-96 h-96 bg-slate-900 rounded-full blur-3xl opacity-50"></div>
+          <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-slate-600 rounded-full blur-3xl opacity-30"></div>
+        </div>
+
+        <div class="relative z-10 grid grid-cols-12 gap-y-8">
+          <div class="col-span-12 md:col-span-8 md:col-start-3 space-y-6">
+            <h2 class="text-3xl md:text-5xl font-medium tracking-tight text-white leading-tight">
+              Your vision deserves <br class="hidden md:block" />
+              uncompromised care.
+            </h2>
+            <p class="text-blue-100 text-lg font-light max-w-xl mx-auto leading-relaxed">
+              Experience the difference of independent optometry in the heart of Billericay. Book your appointment today.
+            </p>
+          </div>
+
+          <div class="col-span-12 md:col-span-8 md:col-start-3 flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+            <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center h-14 px-8 rounded-[10px] bg-white text-blue-600 font-medium text-sm hover:bg-blue-50 transition-all duration-300 shadow-lg shadow-blue-900/10">
+              Book Appointment
+              <span class="iconify ml-2" data-icon="lucide:calendar" data-width="16"></span>
+            </a>
+            <a href="tel:01277654321" class="w-full sm:w-auto inline-flex items-center justify-center h-14 px-8 rounded-[10px] bg-transparent border border-blue-400 text-white font-medium text-sm hover:bg-blue-500/20 transition-all duration-300">
+              Call 01277 654 321
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-slate-900 text-slate-400 py-20 border-t border-slate-800 relative z-10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-12 gap-y-12 md:gap-x-12">
+      <div class="col-span-12 md:col-span-4 space-y-6">
+        <a href="#" class="text-2xl font-semibold tracking-tight text-white uppercase" style="font-family: 'Abhaya Libre', serif;">
+          A<span class="text-blue-600">Q</span>UILA
+        </a>
+        <div class="flex items-center gap-5">
+          <a href="#" class="text-slate-400 hover:text-blue-400 transition-colors">
+            <span class="iconify" data-icon="lucide:instagram" data-width="20"></span>
+          </a>
+          <a href="#" class="text-slate-400 hover:text-blue-400 transition-colors">
+            <span class="iconify" data-icon="lucide:facebook" data-width="20"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-span-4">
+        <h4 class="text-white font-medium text-sm uppercase tracking-wider mb-4">Practice</h4>
+        <ul class="space-y-4 text-sm">
+          <li><a href="#about" class="hover:text-white transition-colors">Philosophy</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Eye Exams</a></li>
+          <li><a href="#frames" class="hover:text-white transition-colors">Eyewear</a></li>
+          <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-span-4">
+        <h4 class="text-white font-medium text-sm uppercase tracking-wider mb-4">Services</h4>
+        <ul class="space-y-4 text-sm">
+          <li><a href="#" class="hover:text-white transition-colors">OCT Scanning</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Contact Lenses</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Dry Eye Clinic</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Myopia Control</a></li>
+        </ul>
+      </div>
+
+      <div class="col-span-12 pt-6 mt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+        <p class="text-xs text-slate-500">
+          © 2026 Aquila Optometrist. High Street, Billericay.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
